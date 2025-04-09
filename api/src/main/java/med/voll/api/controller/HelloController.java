@@ -1,5 +1,5 @@
 //Pacote que recebe as requisições tanto do back-end quanto do front
-package med.voll.api;
+package med.voll.api.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
