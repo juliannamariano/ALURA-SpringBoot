@@ -20,7 +20,7 @@ public class MedicoController {
 
     /*Recebendo os dados dentro de uma classe - Dessa forma conseguimos filtar oq queremos do JSON*/
     @PostMapping //Se chegar uma requisição via "post" o spring chamara o método cadastrar
-    public void cadastrar(@RequestBody DadosCadastroMedico dados){ //Com essa anotação o Spring recebe a requisição do json
+    public void cadastrar(@RequestBody DadosCadastroMedico dados){ //Com essa anotação o Spring recebe a requisição do json, e como são alguns dados do cadastro médico recebemos eles dentro de uma classe
         System.out.println(dados);
 
     }

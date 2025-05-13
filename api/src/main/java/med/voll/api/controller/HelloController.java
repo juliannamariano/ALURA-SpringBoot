@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/hello") //Nessa anotação indica qual URL que nós vamos responder
 public class HelloController {
 
-    /*Essa anotação indica de qual método HTTP que ele está respondendo*/
+    //*Essa anotação indica de qual método HTTP que ele está respondendo*//
     @GetMapping  //Toda vez que for chamado o método "get" vai voltar esse método abaixo
     public String olaMundo(){
         return "Hello Julianna";
