@@ -1,6 +1,7 @@
 package med.voll.api.controller;
 
 import med.voll.api.medico.DadosCadastroMedico;
+import med.voll.api.medico.Medico;
 import med.voll.api.medico.MedicoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,7 +21,7 @@ public class MedicoController {
 
     //}
 
-    //Para o spring boot fazer o carregamento e a criação desse objeto automaticamente
+    //Para o spring boot fazer o carregamento e a criação desse objeto automaticamente - Injeção de dependencias
     @Autowired
     private MedicoRepository repository;
 
@@ -30,7 +31,7 @@ public class MedicoController {
         //System.out.println(dados); -> Dessa forma so estavamos imprimindo o valor
 
         //Pegar o repository e cadastrar o medico no banco de dados
-        repository.save(medico)
+        repository.save(new Medico(dados));//como a classe recebe a variavel dados vamos transformar o objeto medico para receber esses dados
 
     }
 
