@@ -7,6 +7,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import med.voll.api.endereco.Endereco;
 
+/*CLASSE JPA - Faz o mapeamento dos dados, ele indica como os atributos java vão se relacionar com o banco de dados*/
+
 @Table(name = "medicos")
 @Entity(name="Medico")
 @Getter
